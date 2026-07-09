@@ -1,0 +1,268 @@
+/* Reset style */
+
+*{
+margin: 0;
+padding: 0;
+font-family: "Open Sans", sans-serif;
+}
+img{
+    max-width:100% ;
+}
+/* common style */
+.common-btn{
+    background-color: #FD6E0A;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+}
+.outline-btn{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    cursor:pointer ;
+
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    
+     padding: 12px 0;
+}
+.logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.logo-r{
+    color: #FD6E0A;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+   
+}
+ul li a{
+    text-decoration: none;
+}
+/* Hero section style */
+.hero-parent-root{
+ background-color:#fff8f3;
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+   
+}
+.hero-left-p-1{
+    font-size: 28 px;
+    font-weight: 600;
+}
+.hero-left h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.hero-left-btn-parent{
+    margin-top:12px ;
+}
+/* About us css */
+.about-parent{
+    background-color: #fff8f3;
+    margin: 70px auto ;
+    border-radius: 10px;
+    padding:75px ;
+    text-align:center ;
+}
+.about-parent p{
+    margin:20px 0 ;
+}
+.about-box-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.about-box-parent.box{
+    background-color: #FD6E0A;
+    padding:5px ;
+    border-radius: 5px;
+}
+/* what i do section css */
+.what-i-do-parent{
+   margin: 60px auto; 
+   text-align: center;
+}
+.what-i-do-card-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.what-i-do-card{
+    border: 2px solid orange;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+} 
+.what-i-do-card h2{
+   margin: 10px 0; 
+}
+.what-i-do-card p{
+color: #757575;
+font-size: 15px;
+}    
+/* Amazing work section style */
+.my-amazing-parent{
+    text-align: center;
+}
+.gallery{
+    margin-top: 20px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:250px ;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    "four five six"  ;
+}
+.gallery img{
+    height: 100%;
+    width: 100;
+    object-fit: cover;
+}
+.box-1{
+grid-area: one;
+}
+.box-2{
+  grid-area: two;  
+}
+
+.box-3{
+   grid-area: three; 
+}
+
+.box-4{
+  grid-area: four;  
+}
+
+.box-5{
+    grid-area: five;
+}
+
+.box-6{
+   grid-area: six; 
+}
+/* =========================
+   FOOTER
+========================= */
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+
+    background: #fff8f3;
+    padding: 70px;
+    margin-top: 80px;
+
+    border-radius: 20px;
+    align-items: start;
+}
+
+/* Left Section */
+.footer-left h2,
+footer h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #181818;
+}
+
+.footer-left p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.font-awesome {
+    display: flex;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.font-awesome span {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: white;
+
+    color: #FD6E0A;
+    font-size: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.font-awesome span:hover {
+    background: #FD6E0A;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* =========================
+   FORM
+========================= */
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+footer form input,
+footer form textarea {
+    width: 100%;
+    padding: 16px 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: .3s;
+}
+
+footer form input:focus,
+footer form textarea:focus {
+    border-color: #FD6E0A;
+    box-shadow: 0 0 10px rgba(253,110,10,.2);
+}
+
+footer form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
